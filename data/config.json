@@ -6,27 +6,34 @@
   },
   "processing": {
     "profile_settings": {
+      "default": {
+        "threshold": 5.0
+      },
       "tech-news": {
-        "threshold": 7.0
+        "threshold": 5.0
       }
     }
   },
   "sources": {
     "rss": [
       {
-        "name": "Google News - 海外中国文化综述",
-        "url": "https://news.google.com/rss/search?q=%22Chinese+culture%22+OR+%22Chinese+mythology%22+OR+%22Hanfu%22+OR+%22Traditional+Chinese%22&hl=en-US&gl=US&ceid=US:en"
+        "name": "Google News - 文化/汉学/民俗",
+        "url": "https://news.google.com/rss/search?q=%22Chinese+culture%22+OR+%22Chinese+mythology%22+OR+%22Hanfu%22+OR+%22Sinology%22+OR+%22Chinese+folklore%22&hl=en-US&gl=US&ceid=US:en"
       },
       {
-        "name": "Google News - 传统节日与非遗",
-        "url": "https://news.google.com/rss/search?q=%22Mid-Autumn%22+OR+%22Dragon+Boat%22+OR+%22Chinese+paper+cutting%22+OR+%22Peking+Opera%22&hl=en-US&gl=US&ceid=US:en"
+        "name": "Google News - 节日/非遗/传统艺术",
+        "url": "https://news.google.com/rss/search?q=%22Mid-Autumn%22+OR+%22Dragon+Boat%22+OR+%22Peking+Opera%22+OR+%22Intangible+cultural+heritage%22+OR+%22Chinese+calligraphy%22&hl=en-US&gl=US&ceid=US:en"
+      },
+      {
+        "name": "Google News - 古建筑/艺术/茶文化",
+        "url": "https://news.google.com/rss/search?q=%22Chinese+architecture%22+OR+%22Chinese+tea+culture%22+OR+%22Asian+art+exhibition%22+OR+%22Chinese+ceramics%22&hl=en-US&gl=US&ceid=US:en"
       },
       {
         "name": "SCMP Culture",
         "url": "https://www.scmp.com/rss/318218/feed"
       },
       {
-        "name": "Smithsonian Magazine (史密森尼)",
+        "name": "Smithsonian Magazine",
         "url": "https://www.smithsonianmag.com/rss/history-archaeology/"
       },
       {
@@ -40,7 +47,11 @@
         { "subreddit": "ChineseCulture" },
         { "subreddit": "ChineseHistory" },
         { "subreddit": "Hanfu" },
-        { "subreddit": "ChineseLanguage" }
+        { "subreddit": "ChineseLanguage" },
+        { "subreddit": "Sinology" },
+        { "subreddit": "ChineseFood" },
+        { "subreddit": "AsianArt" },
+        { "subreddit": "Museums" }
       ]
     }
   }
