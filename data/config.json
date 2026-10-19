@@ -6,9 +6,6 @@
   },
   "processing": {
     "profile_settings": {
-      "default": {
-        "threshold": 5.0
-      },
       "tech-news": {
         "threshold": 5.0
       }
