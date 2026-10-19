@@ -5,9 +5,11 @@
     "api_key_env": "GOOGLE_API_KEY"
   },
   "processing": {
-    "languages": ["zh"],
-    "score_threshold": 7.0,
-    "custom_prompt": "你是一个中国传统文化与海外传播专家。请评估以下新闻/文章的价值（0-10分）。评估维度包括：1. 文化相关度：是否涉及中国传统文化、历史 heritage、传统节日、民间艺术或古典文学；2. 海外关注与讨论度：是否代表海外主流媒体或社群对中国文化的新关注视角；3. 选题转化价值：能否为中国文化主题网站（如节日、典籍、民俗）提供新的内容灵感或解读视角。请过滤无关的政治炒作、泛商业广告。仅对高相关度内容打出 7.0 分以上。"
+    "profile_settings": {
+      "tech-news": {
+        "threshold": 7.0
+      }
+    }
   },
   "sources": {
     "rss": [
@@ -32,11 +34,14 @@
         "url": "https://news.un.org/feed/subscribe/en/news/topic/culture-and-nature/feed/rss.xml"
       }
     ],
-    "reddit": [
-      "ChineseCulture",
-      "ChineseHistory",
-      "Hanfu",
-      "ChineseLanguage"
-    ]
+    "reddit": {
+      "enabled": true,
+      "subreddits": [
+        { "subreddit": "ChineseCulture" },
+        { "subreddit": "ChineseHistory" },
+        { "subreddit": "Hanfu" },
+        { "subreddit": "ChineseLanguage" }
+      ]
+    }
   }
 }
